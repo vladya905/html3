@@ -9,7 +9,30 @@
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
 }
+
+/* reset */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 /* main */
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  width: 1128px;
+}
 body {
   font-family: var(--font-family);
   font-size: 16px;
@@ -17,7 +40,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.section {
+  margin-bottom: 120px;
+}
 .list {
   list-style: none;
 }
@@ -75,6 +100,7 @@ body {
 }
 /* title */
 .section-title {
+  margin-bottom: 72px;
   color: var(--dark);
   font-weight: 700;
   font-size: 36px;
@@ -83,15 +109,22 @@ body {
 }
 
 .section-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
 /* hero */
 .hero-section {
+  padding: 188px 0px;
   background-color: var(--dark);
+  text-align: center;
 }
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  width: 496px;
   font-size: 56px;
   line-height: 1.1;
   color: var(--primary-white);
@@ -99,10 +132,16 @@ body {
 }
 /* team */
 .team-section {
+  margin-bottom: 0px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--light);
 }
 /* buttons */
 .button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -110,6 +149,7 @@ body {
   letter-spacing: 0.04em;
 }
 .button.primary {
+  padding: 16px 32px;
   background-color: var(--primary-brand);
   color: var(--primary-white);
 }
@@ -119,7 +159,9 @@ body {
   background-color: var(--pressed-state);
 }
 .button.secondary {
-  background-color: var(--accent);
+  border-color: var(--accent);
+  padding: 12px 24px;
+  background-color: var(--light);
   color: var(--primary-brand);
 }
 .button.secondary:hover,
@@ -133,4 +175,11 @@ footer {
 }
 .footer-text {
   color: var(--light);
+}
+.section-filter {
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+.portfolio-item {
+  border: 1px solid var(--accent);
 }
