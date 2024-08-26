@@ -1,0 +1,136 @@
+:root {
+  --text: #434455; /* slate */
+  --primary-white: #ffffff; /* white */
+  --pressed-state: #404bbf; /* ocean */
+  --dark: #2e2f42; /* navy blue */
+  --accent: #e7e9fc; /* cornflower */
+  --light: #f4f4fd; /* cloud */
+  --primary-brand: #4d5ae5; /* iris */
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+/* main */
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.visualli-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* logo */
+.logo {
+  text-decoration: none;
+  color: var(--primary-brand);
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.header-span {
+  color: var(--dark);
+}
+.footer-span {
+  color: var(--primary-white);
+}
+/* header */
+.address-nav .link {
+  color: var(--text);
+  font-style: normal;
+}
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--pressed-state);
+}
+.site-nav .link {
+  color: var(--dark);
+  font-weight: 500;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--pressed-state);
+}
+.link.current {
+  color: var(--pressed-state);
+}
+/* title */
+.section-title {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+/* hero */
+.hero-section {
+  background-color: var(--dark);
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.1;
+  color: var(--primary-white);
+  text-align: center;
+}
+/* team */
+.team-section {
+  background-color: var(--light);
+}
+/* buttons */
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.button.primary {
+  background-color: var(--primary-brand);
+  color: var(--primary-white);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--pressed-state);
+}
+.button.secondary {
+  background-color: var(--accent);
+  color: var(--primary-brand);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--pressed-state);
+  color: var(--primary-white);
+}
+/* footer */
+footer {
+  background-color: var(--dark);
+}
+.footer-text {
+  color: var(--light);
+}
