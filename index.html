@@ -17,11 +17,11 @@
   <body>
     <!-- heder -->
     <header class="page-header">
-      <div class="container">
+      <div class="container header-container">
+        <a href="./index.html" class="logo"
+          >Web<span class="header-span">Studio</span></a
+        >
         <nav>
-          <a href="./index.html" class="logo"
-            >Web<span class="header-span">Studio</span></a
-          >
           <ul class="site-nav list">
             <li><a class="link current" href="./index.html">Studio</a></li>
             <li><a class="link" href="./portfolio.html">Portfolio</a></li>
@@ -56,28 +56,28 @@
         <div class="container">
           <h2 class="visualli-hidden">our features</h2>
           <ul class="list features-list">
-            <li>
+            <li class="features-item">
               <h3 class="section-subtitle">Strategy</h3>
               <p>
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="section-subtitle">Punctuality</h3>
               <p>
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="section-subtitle">Diligence</h3>
               <p>
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="section-subtitle">Technologies</h3>
               <p>
                 Design practice focused on digital experiences. We bring forth a
@@ -91,9 +91,21 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
-          <img src="./images/portfolio/img1.jpg" alt="Mac" width="360" />
-          <img src="./images/portfolio/img2.jpg" alt="Browser" width="360" />
-          <img src="./images/portfolio/img3.jpg" alt="Mobile" width="360" />
+          <ul class="work-list list">
+            <li>
+              <img src="./images/portfolio/img1.jpg" alt="Mac" width="360" />
+            </li>
+            <li>
+              <img
+                src="./images/portfolio/img2.jpg"
+                alt="Browser"
+                width="360"
+              />
+            </li>
+            <li>
+              <img src="./images/portfolio/img3.jpg" alt="Mobile" width="360" />
+            </li>
+          </ul>
         </div>
       </section>
       <!-- our team  -->
@@ -107,13 +119,17 @@
                 alt="Mark Guerrero"
                 width="264"
               />
-              <h3 class="section-subtitle">Mark Guerrero</h3>
-              <p>Product Designer</p>
+              <div class="team-descr">
+                <h3 class="section-subtitle">Mark Guerrero</h3>
+                <p>Product Designer</p>
+              </div>
             </li>
             <li>
               <img src="./images/contacts/tom.jpg" alt="Tom Ford" width="264" />
-              <h3 class="section-subtitle">Tom Ford</h3>
-              <p>Frontend Developer</p>
+              <div class="team-descr">
+                <h3 class="section-subtitle">Tom Ford</h3>
+                <p>Frontend Developer</p>
+              </div>
             </li>
             <li>
               <img
@@ -121,8 +137,10 @@
                 alt="Camila Garcia"
                 width="264"
               />
-              <h3 class="section-subtitle">Camila Garcia</h3>
-              <p>Marketing</p>
+              <div class="team-descr">
+                <h3 class="section-subtitle">Camila Garcia</h3>
+                <p>Marketing</p>
+              </div>
             </li>
             <li>
               <img
@@ -130,8 +148,10 @@
                 alt="Daniel Wilson"
                 width="264"
               />
-              <h3 class="section-subtitle">Daniel Wilson</h3>
-              <p>UI Designer</p>
+              <div class="team-descr">
+                <h3 class="section-subtitle">Daniel Wilson</h3>
+                <p>UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

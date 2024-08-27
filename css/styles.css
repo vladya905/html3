@@ -24,14 +24,16 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+}
 /* main */
 .container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
-  width: 1128px;
+  /* outline: 1px solid red; */
 }
 body {
   font-family: var(--font-family);
@@ -79,6 +81,14 @@ body {
   color: var(--primary-white);
 }
 /* header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.address-nav {
+  display: flex;
+  gap: 40px;
+}
 .address-nav .link {
   color: var(--text);
   font-style: normal;
@@ -87,9 +97,20 @@ body {
 .address-nav .link:focus {
   color: var(--pressed-state);
 }
+address {
+  margin-left: auto;
+}
+.site-nav {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+}
 .site-nav .link {
+  display: block;
   color: var(--dark);
   font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -109,6 +130,7 @@ body {
 }
 
 .section-subtitle {
+  color: var(--dark);
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -130,6 +152,18 @@ body {
   color: var(--primary-white);
   text-align: center;
 }
+.features-list {
+  gap: 24px;
+  display: flex;
+}
+.features-item {
+  min-width: 264px;
+}
+.work-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
 /* team */
 .team-section {
   margin-bottom: 0px;
@@ -137,6 +171,18 @@ body {
   padding-bottom: 120px;
   background-color: var(--light);
 }
+.team-descr {
+  padding: 32px 16px;
+  background-color: var(--primary-white);
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
 /* buttons */
 .button {
   cursor: pointer;
@@ -171,15 +217,29 @@ body {
 }
 /* footer */
 footer {
+  padding: 100px 0;
   background-color: var(--dark);
 }
 .footer-text {
+  margin-top: 16px;
   color: var(--light);
+  width: 264px;
 }
-.section-filter {
+
+.filter-list {
   margin-top: 96px;
   margin-bottom: 72px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
-.portfolio-item {
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-descr {
+  padding: 32px 16px;
   border: 1px solid var(--accent);
 }
